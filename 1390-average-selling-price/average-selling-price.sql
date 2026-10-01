@@ -1,6 +1,7 @@
 # Write your MySQL query statement below
--- eshita53
+
 SELECT 
+-- eshita53
 P.product_id,
 ifnull(
 round(
