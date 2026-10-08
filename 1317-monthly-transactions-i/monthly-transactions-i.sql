@@ -1,9 +1,8 @@
 # Write your MySQL query statement below
-
-SELECT
 -- EXTRACT(YEAR_MONTH FROM trans_date)  as month,
+SELECT
+-- eshita53
 DATE_FORMAT(trans_date, '%Y-%m') AS month,
--- FORMAT(trans_date, 'yy-MM')  as month,
 country,
 Count(amount) as trans_count,
 SUM(
