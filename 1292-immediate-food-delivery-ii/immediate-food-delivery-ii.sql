@@ -11,6 +11,7 @@
 -- GROUP BY customer_id
 -- ))
 SELECT 
+-- eshita53
 Round(AVG(order_date = customer_pref_delivery_date 
 ) *100, 2)
 AS immediate_percentage
