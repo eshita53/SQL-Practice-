@@ -1,6 +1,8 @@
 # Write your MySQL query statement below
 WITH CustomerFirst AS 
-(SELECT *
+(SELECT 
+-- eshita53
+*
 FROM Delivery
 WHERE (customer_id, order_date) in ( SELECT
 customer_id,
