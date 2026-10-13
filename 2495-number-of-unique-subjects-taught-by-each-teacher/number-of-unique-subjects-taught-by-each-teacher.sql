@@ -1,6 +1,7 @@
 # Write your MySQL query statement below
 
 SELECT 
+-- eshita53
 teacher_id,
 COUNT(DISTINCT(subject_id)) as cnt
 FROM Teacher
