@@ -2,6 +2,7 @@
 
 WITH InitialLogIn AS (
 SELECT *
+-- eshita53
 FROM Activity
 WHERE (player_id,event_date) IN (  SELECT 
     player_id,
