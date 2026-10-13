@@ -14,9 +14,8 @@ WHERE (player_id,event_date) IN (  SELECT
 
 SELECT 
 ROUND(
-    SUM(
-        CASE WHEN  DATEDIFF(a.event_date, i.event_date) = 1 THEN 1
-        ELSE 0 END
+    SUM( DATEDIFF(a.event_date, i.event_date) = 1 
+       
     ) / 
     (SELECT COUNT(DISTINCT player_id) FROM Activity)
     
